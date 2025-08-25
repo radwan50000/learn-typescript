@@ -70,3 +70,7 @@
 ### After making init the folder as typescript environment :
 
 > After making innit the folder as typescript environment that's make so easy to compile files now you can only type in your terminal ``` tsc -w ``` and it will watch the whole folder you make ``` rootDir path folder ``` and compile into the dist folder without specifing file.
+
+### Types in TypeScript
+<ul> <li>string</li><br> <li>number</li><br> <li>boolean</li> <br><li>any</li> <br></ul>
+
