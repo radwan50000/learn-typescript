@@ -111,5 +111,11 @@ variable1 = 10;
 
 variable1 = 'Yasser';
 
+```
+
+```
+
+let arr : string[] = ['ali','hossam','amin'];
+
 
 ```
