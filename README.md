@@ -93,3 +93,23 @@ let stuName = 'Ali'; // => Data Typw : string
 
 > if we didn't specified data type to variable and didn't give it value that compiler will not know it's type and give it type any !
 
+### Variable with types can change many type :
+
+> You can make the variable change many type by adding ``` | ``` operator between every type like this :
+
+```
+
+let variable1 : string | number ;
+// OR
+let variable1 : (string | number) ;
+// OR
+let variable1 : (string | number) = 'Ahmed';
+// OR
+let variable1 : (string | number) = 20;
+
+variable1 = 10;
+
+variable1 = 'Yasser';
+
+
+```
