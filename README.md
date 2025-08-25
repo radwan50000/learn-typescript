@@ -12,3 +12,57 @@
 
 >TypeScript is Made with extension of file ``` .ts ``` to be like that ``` testing.ts ``` <br>To Compile This File will type in terminal ``` tsc ``` for typescript compiler and then our file name ``` tsc ./testing.ts ```<br>To Watch always the file we can write ``` tsc -w ./index.ts ```
 
+### Making the Configure File
+> Configure file is containing the setting of the typescript you can edit many thing from it like where is the place that all the typescript will found in and where is the place that will compile to after compiling to javascript
+
+<h5> The Following Code Show The Configuration File of the TypeScript : </h5>
+
+```
+
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src", // => This is where to find the typescript files
+    "outDir": "./dist", // this is where to compile the typescript file [change to javascript]
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  }
+}
+
+
+```
