@@ -117,5 +117,12 @@ variable1 = 'Yasser';
 
 let arr : string[] = ['ali','hossam','amin'];
 
+for(let i = 0;i < arr.length;i++){
+  console.log(arr[i].repeat(2)); //This will cause warning so better use [! , ?]
+}
+
+console.log(arr[i]?.repeat(2)); // ? mean arr[i] can be undefiend (optional)
+
+console.log(arr[i]!`.repeat(2)); // ! mean arr[i] mustn't be undefiend 
 
 ```
