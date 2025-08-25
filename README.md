@@ -74,3 +74,22 @@
 ### Types in TypeScript
 <ul> <li>string</li><br> <li>number</li><br> <li>boolean</li> <br><li>any - any is Generic Type we will not face problems if we change to another type later with it</li> <br></ul>
 
+```
+let name:string = 'muhammed';
+
+let age:number = 20;
+
+let all:any = 'Ahmed';
+
+all = 20;
+
+console.log(all); // => 20 "No Error will be shown"
+
+let test; // => Data Type : any
+
+let stuName = 'Ali'; // => Data Typw : string
+
+```
+
+> if we didn't specified data type to variable and didn't give it value that compiler will not know it's type and give it type any !
+
