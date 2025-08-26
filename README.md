@@ -136,7 +136,7 @@ let arr2: number[] = [1,2,3,4];
 
 let arr3 : (string | number)[] = [1 , 2 ,3 ,4 ,'A','B'];
 
-let arr4 : (string | number | string[])[] = [1,2,'A',['A','B',2]];
+let arr4 : (string | number | string[])[] = [1,2,'A',['A','B']];
  
 
 ```
