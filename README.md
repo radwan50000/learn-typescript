@@ -126,3 +126,17 @@ console.log(arr[i]?.repeat(2)); // ? mean arr[i] can be undefiend (optional)
 console.log(arr[i]!`.repeat(2)); // ! mean arr[i] mustn't be undefiend 
 
 ```
+
+### Multi Diemensional Arrays
+
+```
+let arr1: string[] = ['a','b','c'];
+
+let arr2: number[] = [1,2,3,4];
+
+let arr3 : (string | number)[] = [1 , 2 ,3 ,4 ,'A','B'];
+
+let arr4 : (string | number | string[])[] = [1,2,'A',['A','B',2]];
+ 
+
+```
