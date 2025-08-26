@@ -166,3 +166,26 @@ function test(name:string , age:number) : string {
 }
 
 ```
+
+### Optional & Default Parameters :
+
+```
+//Default Value
+function showData(name = 'Unknown', age, country) {
+    return `${name} ${age} ${country}`;
+}
+
+console.log(showData(undefined,10 , 'EGY')); // Unknown 10 EGY
+
+//Optional Value
+function showData(name : string, age : number, country?:string){
+    return `${name} ${age} ${country}`;
+}
+
+console.log(showData('Muhammed',10)); // Here country i can type it or can ignore it and i will didn't face any problems but it will return undefined in it's place
+
+
+
+```
+
+> Very Important Note : Optional Parameter it comes in the last i can't put optional paramter in first will cause me error
