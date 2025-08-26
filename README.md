@@ -140,3 +140,29 @@ let arr4 : (string | number | string[])[] = [1,2,'A',['A','B']];
  
 
 ```
+
+### Type Annotation :
+
+> In config file there is multi features you can enable like :
+
+
+```
+
+"noImplicitReturns": true, // it will show error in the function if there is no return value
+"noImplicitOverride": true, // Force me ues override word when overriding function
+"noUnusedLocals": true, // Error on unused local variables
+"noUnusedParameters": true, // Error on unused function parameter
+"noFallthroughCasesInSwitch": true, // Error when using switch without break
+
+```
+
+
+### Retured Value from Function :
+
+```
+
+function test(name:string , age:number) : string {
+  return `Hello ${name} your age is ${age}`;
+}
+
+```
