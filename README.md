@@ -153,6 +153,7 @@ let arr4 : (string | number | string[])[] = [1,2,'A',['A','B']];
 "noUnusedLocals": true, // Error on unused local variables
 "noUnusedParameters": true, // Error on unused function parameter
 "noFallthroughCasesInSwitch": true, // Error when using switch without break
+"noEmitOnError": true, // !Important : this one is not exist as default in the config file you can added it , it strict the typescript file to be not compiled to javascript until the error in the typescript file is gone if there is no error it will change to js file
 
 ```
 
