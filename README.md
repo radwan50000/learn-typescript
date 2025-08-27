@@ -202,6 +202,12 @@ function sumNums (...nums: number[]): number {
     //return nums.reduce((acc,curr) => acc+=curr);
 }
 
+//Arrow Function
+
+const sumNums = (...nums:number[]) : number => {
+    return nums.reduce((acc,curr) => acc+=curr , 0);
+}
+
 console.log(sumNums(4,6)); // will return 10
 
 ```
