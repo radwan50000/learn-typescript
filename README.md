@@ -72,7 +72,7 @@
 > After making innit the folder as typescript environment that's make so easy to compile files now you can only type in your terminal ``` tsc -w ``` and it will watch the whole folder you make ``` rootDir path folder ``` and compile into the dist folder without specifing file.
 
 ### Types in TypeScript
-<ul> <li>string</li><br> <li>number</li><br> <li>boolean</li> <br><li>any - any is Generic Type we will not face problems if we change to another type later with it</li> <br></ul>
+<ul> <li>string</li><br> <li>number</li><br> <li>boolean</li> <br> <li>object</li> <br><li>any - any is Generic Type we will not face problems if we change to another type later with it</li> <br></ul>
 
 ```
 let name:string = 'muhammed';
