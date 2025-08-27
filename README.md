@@ -190,3 +190,18 @@ console.log(showData('Muhammed',10)); // Here country i can type it or can ignor
 ```
 
 > Very Important Note : Optional Parameter it comes in the last i can't put optional paramter in first will cause me error
+
+### Function Rest Parameter
+
+```
+
+function sumNums (...nums: number[]): number {
+    let result:number = 0;
+    nums.forEach((num) => result += num);
+    return result;
+    //return nums.reduce((acc,curr) => acc+=curr);
+}
+
+console.log(sumNums(4,6)); // will return 10
+
+```
