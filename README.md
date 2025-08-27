@@ -247,3 +247,28 @@ const person1:Person = {name:'Ahmed Muhammed',age: 30 , isDriver: false};
 console.log(person1);
 
 ```
+> You can inherit from types like inheritence from classes like in this example :
+
+```
+
+type Person = {
+    name: string,
+    age: number,
+    isDriver : boolean
+}
+
+type Employee = Person & {
+    jop: string,
+    salary : number
+}
+
+const person1:Person = {name:'Ahmed Muhammed',age: 30 , isDriver: false};
+
+const emp1: Employee  = {name:'Muhammed',age:23,isDriver:true,jop:'Front-End Dev',salary:30e3}
+
+console.log(person1);
+
+console.log(emp1);
+
+
+```
