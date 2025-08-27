@@ -227,3 +227,23 @@ let container : stNum = 10;
 container = 'test';
 
 ```
+
+### Advanced Type Alias
+
+> You can deal with advanced type alias like a class you defince the variable it must be in their and the data type of each one  but what is the diffrence between them ? <br> ``` type (or interface) ``` → only describes the structure of the data, no methods, no logic. <br> ``` class ``` → can have fields and methods, and you can create instances with new.
+
+
+```
+
+type Person = {
+    name: string,
+    age: number,
+    isDriver : boolean
+}
+
+
+const person1:Person = {name:'Ahmed Muhammed',age: 30 , isDriver: false};
+
+console.log(person1);
+
+```
