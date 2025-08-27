@@ -211,3 +211,19 @@ const sumNums = (...nums:number[]) : number => {
 console.log(sumNums(4,6)); // will return 10
 
 ```
+### Type Alias
+
+> Give you abillity to to rename the types you have like in this example :
+
+```
+type n = number;
+
+let num1 : n = 5;
+
+type stNum = string | number;
+
+let container : stNum = 10;
+
+container = 'test';
+
+```
