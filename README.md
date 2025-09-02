@@ -272,3 +272,33 @@ console.log(emp1);
 
 
 ```
+
+
+### Return Types
+
+```
+// So I can return all the value i need as specific types from the function
+function compare(num1: number , num2: number) : -1 | 0 | 1 {
+  if(num1 === num2){
+    return 0;
+  }else if(num1 > num2){
+    return 1;
+  }else{
+    return -1;
+  }
+}
+
+
+//We Can use types in this
+type nums = -1 | 0 | 1 ;
+function compare(num1: number , num2: number) : nums{
+  if(num1 === num2){
+    return 0;
+  }else if(num1 > num2){
+    return 1;
+  }else{
+    return -1;
+  }
+}
+
+```
