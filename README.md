@@ -384,4 +384,22 @@ const printName = (name) : never => {
 > Note : ``` return; ``` means return undefiend
 
 
+### Enum : Enumerated
+
+> Enums is data type that like object and hold group of variables relate to each other and give it's value or give it's values later
+
+```
+
+enum GameControl {
+    w = 'Jump',
+    a = 'Move Left',
+    d = 'Move right',
+    s = 'Move Down'
+}
+
+console.log(Game_Control.w); // Jump
+
+
+
+```
 
