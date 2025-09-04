@@ -420,3 +420,42 @@ let img = document.getElementById('book-img') as HTMLImageElement;
 console.log(img.src); // Now Everything is fine :)
 
 ```
+
+
+### Data Types - Union And Intersection Types
+
+> Union : mean it will take only the common types between the element <br>Intersection : mean it will take all the types in the elements
+
+```
+
+type One = {
+    one: number,
+    two: string,
+    intersection: boolean
+}
+
+type Two = {
+    three: boolean,
+    four: undefined,
+    intersection: boolean,
+}
+
+type mix = One | Two;
+
+type mix2 = One & Two;
+
+function test(btns: mix){
+    console.log(`btns : ${btns.three}`);  // Error
+    console.log(`btns : ${btns.one}`);  // Error
+    console.log(`btns : ${btns.four}`);  // Error
+    console.log(`btns : ${btns.intersection}`);  // Done
+}
+
+function test2(btns: mix2){
+    console.log(`btns : ${btns.three}`);  // Done
+    console.log(`btns : ${btns.one}`);  // Done
+    console.log(`btns : ${btns.four}`);  // Done
+    console.log(`btns : ${btns.intersection}`);  // Done
+}
+
+```
