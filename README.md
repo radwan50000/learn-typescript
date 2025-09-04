@@ -349,3 +349,37 @@ const [id , title , published] = articles;
 console.log(`${id} ${title} ${published}`); // 1 Articale Number : 1 false 
 
 ```
+
+### Void & Never 
+> Void is When the function return Nothing the function will not return any thing <br>Never is when the function will not return any thing (didn't type even the return keywork)
+
+```
+
+// Void => can type return or not but i will not return a datatype
+const test = () : void => {
+  console.log("this is test function");
+  return;
+}
+
+// Never => will not type return , it's unreachable
+
+const showError = (msg) => {
+  throw new Error(msg);
+  return; // => this is unreachable code bec the compiler will end the function at the throw error line
+}
+
+// Another Example on Never
+
+const printName = (name) : never => {
+  while(true){
+    console.log(name);
+  }
+  return; // This is Unreachable Code
+}
+
+```
+
+> Note : ``` return; ``` means return undefiend
+
+
+
