@@ -302,3 +302,38 @@ function compare(num1: number , num2: number) : nums{
 }
 
 ```
+
+### Tubles
+
+> Tubles : has <br>1-Specific No of Elements <br>2-We know each position what data type of it 
+
+```
+
+let articles : [ number , string , boolean ] = [ 1 , 'Artical Number : 1' , false ];
+
+articles = ['test' , 1 , 'Artical One' , false]; //Error -> First we put string in the first of tuble and we init as string as first , Second we put extra number of needed we init as 3 arguments only
+
+articles = [2 , 'Artical Number : 2' , true]; // No Problems
+
+```
+
+> we can face type of errors here or bug if we init the tuble and after that we pushed element it will be added to handle this we must make the tuble readonly (so we can't push any element through it)
+
+
+```
+let articles : [ number , string , boolean ] = [ 1 , 'Artical Number : 1' , false ];
+
+articles.push(100); // -> [1 , 'Artical Number : 1' , false , 100];
+
+// To Handle it : 
+
+let articles : readonly [ number , string , boolean ] = [ 1 , 'Artical Number : 1' , false ];
+
+articles.push(100) // -> will face error
+
+// But we can still change the tuble without problems even if it's readonly
+
+articles = [ 1 , 'Artical Number : 1' , false ]
+
+
+```
