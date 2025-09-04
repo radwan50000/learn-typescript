@@ -403,3 +403,7 @@ console.log(GameControl.w); // Jump
 
 ```
 
+### Data Types : Type Assertion
+
+> Assertion : is very usefull when you interact with the DOM using the Typescript as we long fetching element from the DOM using the JS so Typescript didn't know what is the type of the data is returning so if i fetch image using ``` getElementById(); ``` the Typescript didn't know it's image and if i give attribute ``` src ``` to this HTML var it will give error because it's only know it's HTML Element so <span style={color: yellow}> Assertion </span> is helping in this case
+
