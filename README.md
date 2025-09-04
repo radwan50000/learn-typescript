@@ -426,6 +426,8 @@ console.log(img.src); // Now Everything is fine :)
 
 > Union : mean it will take only the common types between the element <br>Intersection : mean it will take all the types in the elements
 
+> Union : is the OR Operator , Intersection : is the AND Operator .
+
 ```
 
 type One = {
