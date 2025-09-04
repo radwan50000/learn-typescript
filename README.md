@@ -480,3 +480,15 @@ let obj : {username: string , id: number , hire: boolean} = {
 }
 
 ```
+> if we added ``` readonly ``` to any field you will not have any access to change it later :
+
+```
+let obj : {readonly  username: string , id: number , hire: boolean} = {
+  username: 'Ahmed',
+  id: 100,
+  hire: true,
+}
+
+obj.username = 'Ali'; // Error
+
+```
