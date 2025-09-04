@@ -465,3 +465,18 @@ function test2(btns: mix2){
 }
 
 ```
+
+
+### Type Annotations With Object
+
+> is to specify types to objects field
+
+```
+
+let obj : {username: string , id: number , hire: boolean} = {
+  username: 'Ahmed',
+  id: 100,
+  hire: true,
+}
+
+```
