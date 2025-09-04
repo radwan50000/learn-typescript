@@ -417,6 +417,10 @@ console.log(img.src); // Will Cause Error
 
 let img = document.getElementById('book-img') as HTMLImageElement;
 
+// OR
+
+let img = <HTMLImageElement> document.getElementById('book-img');
+
 console.log(img.src); // Now Everything is fine :)
 
 ```
