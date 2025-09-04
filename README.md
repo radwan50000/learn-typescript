@@ -379,6 +379,8 @@ const printName = (name) : never => {
 
 ```
 
+> To make unreachable code detected by the typescript compiler and alert you go to configuration and uncomment the ``` allowUnreachableCode ``` to ``` true ```
+
 > Note : ``` return; ``` means return undefiend
 
 
