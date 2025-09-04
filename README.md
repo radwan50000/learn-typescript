@@ -397,7 +397,7 @@ enum GameControl {
     s = 'Move Down'
 }
 
-console.log(Game_Control.w); // Jump
+console.log(GameControl.w); // Jump
 
 
 
