@@ -337,3 +337,15 @@ articles = [ 1 , 'Artical Number : 1' , false ]
 
 
 ```
+
+### We can Destructers Tuble like in the React props
+
+```
+
+let articles : [ number , string , boolean ] = [ 1 , 'Artical Number : 1' , false ];
+
+const [id , title , published] = articles;
+
+console.log(`${id} ${title} ${published}`); // 1 Articale Number : 1 false 
+
+```
