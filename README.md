@@ -552,6 +552,8 @@ console.log(user1.sayWelcome!());
 
 ### Interface Reopen And Use Cases
 
+> This is not extend it's only reopen the interface again and put data in it .
+
 ```
 
 // Homepage
