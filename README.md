@@ -520,3 +520,61 @@ console.log(user1);
 console.log(getData(user1));
 
 ```
+### Interface Method And Parameters
+
+```
+
+interface User{
+    id: number,
+    name: string,
+    sayHello?(): string, // Function
+    sayWelcome?: () => string, // Arrow Function
+}
+
+
+let user1 : User = {
+    id: 1,
+    name: 'Muhammed',
+    sayHello(){
+        return this.name;
+    },
+    sayWelcome: () => {
+        return user1.name;
+    }
+}
+
+
+console.log(user1.sayHello!());
+
+console.log(user1.sayWelcome!());
+
+```
+
+### Interface Reopen And Use Cases
+
+```
+
+// Homepage
+interface Settings {
+  readonly theme: boolean;
+  font: string;
+}
+
+// Articles Page
+interface Settings {
+  sidebar: boolean;
+}
+
+// Contact Page
+interface Settings {
+  external: boolean;
+}
+
+let userSettings: Settings = {
+  theme: true,
+  font: "Open Sans",
+  sidebar: false,
+  external: true
+}
+
+```
