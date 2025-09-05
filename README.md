@@ -492,3 +492,31 @@ let obj : {readonly  username: string , id: number , hire: boolean} = {
 obj.username = 'Ali'; // Error
 
 ```
+### Interface
+
+```
+
+interface Person {
+    id: number,
+    name: string,
+    weight: number //In Kg
+}
+
+let user1: Person = {
+    id: 1,
+    name: 'Muhammed Elsayed Radwan',
+    weight: 85,
+}
+
+
+const getData = (obj:Person) => {
+    console.log(`Person Id is ${obj.id}`);
+    console.log(`Person Name is ${obj.name}`);
+    console.log(`Person Weight is ${obj.weight}`);
+}
+
+console.log(user1);
+
+console.log(getData(user1));
+
+```
