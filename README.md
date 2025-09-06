@@ -579,4 +579,139 @@ let userSettings: Settings = {
   external: true
 }
 
+
+// Another Example ================================================================
+
+// Login page
+interface Login{
+    readonly user: string,
+}
+
+// Home Page
+interface Login{
+    points?: number,
+    navBar?: boolean,
+}
+
+// Setting Page
+interface Login{
+    setting?: boolean,
+}
+
+
+let user: Login = {
+    user: 'Muhammed Elsayed',
+    points: 10,
+    navBar: false,
+    setting: true,
+}
+
+if(user.points !== undefined) user.points += 20;
+
+
+const showUserData = (obj : Login) => {
+    console.log(`Welcome ${obj.user}`);
+    obj.points !== undefined ? console.log(`Your Points is ${obj.points}`):null;
+    obj.navBar !== undefined ? console.log(`Your Nav Bar ${obj.navBar ? 'is Opened':'is Closed'}`):null;
+    obj.setting !== undefined ? console.log(`Your Setting ${obj.setting ? 'is Opened':'is Closed'}`):null;
+}
+
+
+showUserData(user);
+
+```
+
+### Interface Extend
+
+```
+
+interface User{
+    name: string,
+    age: number,
+    premium: boolean
+}
+
+
+interface Moderator extends User{
+    role: string
+}
+
+
+let user1 : User = {
+    name: 'Ahmed Ali',
+    age: 20,
+    premium: false,
+}
+
+let user2: Moderator = {
+    name: 'Khaled',
+    age: 30,
+    premium: true,
+    role: 'Mod'
+}
+
+```
+
+> The Interface is by specialed by that can be inherticed many interface in the interface or in class
+
+
+```
+
+interface User{
+    name: string,
+    age: number,
+    premium: boolean
+}
+
+
+interface Moderator{
+    isMod: boolean
+}
+
+interface Admin extends User , Moderator {
+    protected: boolean
+}
+
+
+let user1 : User = {
+    name: 'Ahmed Ali',
+    age: 20,
+    premium: false,
+}
+
+let user2: Admin = {
+    name: 'Muhammed Elsayed',
+    age: 23,
+    premium: true,
+    isMod: true,
+    protected: true,
+}
+
+
+let user3: Admin = {
+    name: 'Ali El-Sawy',
+    age: 15,
+    premium: true,
+    isMod: false,
+    protected: false,
+}
+
+
+
+const showAdminData = (data : Admin) => {
+    console.log(`${data.name} Data :`);
+    console.log(`Age is ${data.age}`);
+    console.log(`Have ${data.premium ? 'Premium':'Normal'} Subscribtion`);
+    console.log(`Role : ${data.isMod ? 'Moderator':'Not Moderator'}`);
+    console.log(`User ${data.protected ? "can't be deleted": 'can be deleted'}`);
+}
+
+
+showAdminData(user2);
+
+console.log("==============================================");
+
+
+showAdminData(user3);
+
 ```
