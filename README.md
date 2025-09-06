@@ -724,7 +724,7 @@ showAdminData(user3);
 class Employee {
     name:string;
     salary:number;
-    msg:() => string;
+    msg:() => string; // Function will return String
 
     constructor(name: string, salary: number){
         this.name = name;
