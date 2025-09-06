@@ -652,7 +652,7 @@ let user2: Moderator = {
 
 ```
 
-> The Interface is by specialed by that can be inherticed many interface in the interface or in class
+> The Interface is specialized by that can be inherticed many interface in the interface or in class
 
 
 ```
@@ -713,5 +713,39 @@ console.log("==============================================");
 
 
 showAdminData(user3);
+
+```
+
+### Class Type Annotations
+
+```
+
+
+class Employee {
+    name:string;
+    salary:number;
+    msg:() => string;
+
+    constructor(name: string, salary: number){
+        this.name = name;
+        this.salary = salary;
+        this.msg = function(){
+            return `Name: ${this.name}\nSalary: ${this.salary}`
+        }
+    }
+
+    showMsg(){
+        return `Name: ${this.name}\nSalary: ${this.salary}`
+    }
+}
+
+
+let emp1:Employee = new Employee('Muhammed Elsayed',30e3);
+
+console.log(emp1.name);
+console.log(emp1.msg());
+console.log(emp1.showMsg());
+
+
 
 ```
