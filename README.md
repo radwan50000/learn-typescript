@@ -749,3 +749,44 @@ console.log(emp1.showMsg());
 
 
 ```
+
+
+### Class Access Modifiers
+
+<img
+  src='./assets/img_2.png'
+  alt='Class Access Modifiers'
+/>
+
+
+```
+
+
+class Employee {
+    private name:string;
+    salary:number;
+    msg:() => string; // Function will return String
+
+    constructor(name: string, salary: number){
+        this.name = name;
+        this.salary = salary;
+        this.msg = function(){
+            return `Name: ${this.name}\nSalary: ${this.salary}`
+        }
+    }
+
+    showMsg(){
+        return `Name: ${this.name}\nSalary: ${this.salary}`
+    }
+}
+
+
+let emp1:Employee = new Employee('Muhammed Elsayed',30e3);
+
+console.log(emp1.name); // Can't Be Accessed
+console.log(emp1.msg());
+console.log(emp1.showMsg());
+
+
+
+```
