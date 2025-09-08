@@ -790,3 +790,73 @@ console.log(emp1.showMsg());
 
 
 ```
+
+
+### Class Implements Interface
+
+
+```
+
+interface GiveSalary{
+    salary: number;
+    showSalary: () => string
+}
+
+interface ManagerRoles{
+    dep : string;
+    showDep () : string;
+}
+
+
+class Person implements GiveSalary{
+    private name: string;
+    private age: number;
+    public salary:number;
+    public msg: () => string;
+    constructor(name: string , age: number , salary: number){
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+        this.msg = function (){
+            return `Person Name is ${this.name}\nAge : ${this.age}`;
+        }
+    }
+
+    public showSalary  () : string{
+        return `Person Salary Is ${this.salary}`;
+    }
+}
+
+
+class Manager extends Person implements GiveSalary , ManagerRoles{
+    public dep : string;
+    constructor(name: string , age : number , salary : number , department : string){
+        super(name,age,salary);
+        this.dep = department;
+    }
+
+
+    public showDep () : string{
+
+        return `${this.msg()}\n${this.showSalary()}\nManager Role is ${this.dep}`;
+    }
+
+}
+
+
+
+const per1 : Person = new Person('Muhammed',23 , 30e3);
+
+const mang1 : Manager = new Manager('Muhammed Elsayed', 23 , 50e3 , 'MIS');
+
+console.log(per1.msg());
+
+console.log(per1.showSalary());
+
+console.log('=================================================')
+
+console.log(mang1.showDep());
+
+
+
+```
